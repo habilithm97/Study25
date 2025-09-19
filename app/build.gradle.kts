@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -52,4 +53,7 @@ dependencies {
     implementation(libs.retrofit) // Retrofit
     implementation(libs.converter.gson) // Gson Converter
     implementation(libs.okhttp.logging) // HTTP Log
+
+    implementation(platform(libs.firebase.bom)) // Firebase 버전 통합 관리
+    implementation(libs.firebase.auth.ktx) // Firebase 인증
 }
