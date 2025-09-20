@@ -1,15 +1,14 @@
 package com.example.study25.ui.activity
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.study25.databinding.ActivityLoginBinding
+import com.example.study25.databinding.ActivityRegisterBinding
 
-class LoginActivity : AppCompatActivity() {
-    private val binding by lazy { ActivityLoginBinding.inflate(layoutInflater) }
+class RegisterActivity : AppCompatActivity() {
+    private val binding by lazy { ActivityRegisterBinding.inflate(layoutInflater) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,12 +18,6 @@ class LoginActivity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
-        }
-        with(binding) {
-            btnRegister.setOnClickListener {
-                val intent = Intent(this@LoginActivity, RegisterActivity::class.java)
-                startActivity(intent)
-            }
         }
     }
 }
