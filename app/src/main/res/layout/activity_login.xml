@@ -76,17 +76,19 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="회원가입"
+        android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btnLogin" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/forgotPwBtn"
+        android:id="@+id/btnForgotPw"
         style="@style/LoginFieldMargin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="비밀번호 찾기"
+        android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btnRegister" />
